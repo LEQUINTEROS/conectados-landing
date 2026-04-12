@@ -69,10 +69,10 @@ export default function Credibilidad() {
   const [ref, visible] = useReveal()
 
   return (
-    <section className="relative py-20 md:py-28 bg-white overflow-hidden">
+    <section className="relative pt-8 pb-16 md:pt-10 md:pb-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className={`reveal ${visible ? 'visible' : ''}`}>
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-display font-bold text-violeta-700 mb-4">
               Parte de un ecosistema de cambio
             </h2>

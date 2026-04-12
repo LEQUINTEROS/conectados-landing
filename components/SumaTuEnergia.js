@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useReveal } from '../hooks/useReveal'
 
 const ctas = [
@@ -39,6 +39,14 @@ export default function SumaTuEnergia() {
   const [formData, setFormData] = useState({ nombre: '', email: '', mensaje: '' })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
+  const nameInputRef = useRef(null)
+
+  useEffect(() => {
+    if (activeTab && nameInputRef.current) {
+      nameInputRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      setTimeout(() => nameInputRef.current?.focus({ preventScroll: true }), 500)
+    }
+  }, [activeTab])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -70,26 +78,26 @@ export default function SumaTuEnergia() {
   return (
     <section
       id="suma"
-      className="relative py-24 md:py-32 overflow-hidden"
+      className="relative pt-8 pb-16 md:pt-10 md:pb-20 overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #F8F6FB 0%, #EDE5F5 100%)' }}
     >
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-turquesa-300 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className={`reveal ${visible ? 'visible' : ''}`}>
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10">
             <div className="flex items-center gap-3 justify-center mb-6">
               <div className="w-12 h-[2px] bg-violeta-400" />
               <span className="text-violeta-400 font-semibold text-sm uppercase tracking-widest">Suma tu energía</span>
               <div className="w-12 h-[2px] bg-violeta-400" />
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-violeta-700 leading-tight mb-6">
-              Hay muchas formas de
-              <span className="gradient-text"> ser parte</span>
+              El futuro se construye
+              <span className="gradient-text"> en comunidad</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              No importa desde dónde vengas ni qué sepas. Lo que importa es que quieres
-              que la tecnología funcione para todos. Elige cómo sumarte.
+              Cada persona puede aportar desde su lugar. CONECTADOS es una comunidad abierta
+              para quienes quieren transformar la tecnología en oportunidades reales.
             </p>
           </div>
 
@@ -148,6 +156,7 @@ export default function SumaTuEnergia() {
                         <input
                           type="text"
                           id="name"
+                          ref={nameInputRef}
                           required
                           value={formData.nombre}
                           onChange={e => setFormData({...formData, nombre: e.target.value})}
@@ -168,10 +177,11 @@ export default function SumaTuEnergia() {
                         />
                       </div>
                       <div>
-                        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Cuéntanos (opcional)</label>
+                        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Cuéntanos</label>
                         <textarea
                           id="message"
                           rows={3}
+                          required
                           value={formData.mensaje}
                           onChange={e => setFormData({...formData, mensaje: e.target.value})}
                           className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-violeta-400 focus:ring-2 focus:ring-violeta-400/20 outline-none transition-all text-sm resize-none"

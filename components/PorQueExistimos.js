@@ -5,7 +5,7 @@ export default function PorQueExistimos() {
   const [ref, visible] = useReveal()
 
   return (
-    <section id="por-que" className="relative py-24 md:py-32 bg-white circuit-bg overflow-hidden">
+    <section id="por-que" className="relative pt-8 pb-16 md:pt-10 md:pb-20 bg-white circuit-bg overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className={`reveal ${visible ? 'visible' : ''}`}>
           {/* Section label */}
@@ -40,26 +40,26 @@ export default function PorQueExistimos() {
               {[
                 {
                   number: '75,6%',
-                  label: 'de jóvenes usa IA generativa',
-                  sub: 'frente al 7,4% de mayores de 65',
+                  label: 'de jóvenes de 16 a 24 años usa IA generativa',
+                  sub: 'frente al 7,4% de las personas de 65 a 74 años',
                   color: 'violeta',
                 },
                 {
-                  number: '15M',
-                  label: 'de personas en España',
-                  sub: 'carecen de competencias digitales básicas',
-                  color: 'turquesa',
-                },
-                {
                   number: '40%',
-                  label: 'de la ciudadanía',
-                  sub: 'nunca ha utilizado inteligencia artificial',
+                  label: 'de los españoles no ha utilizado nunca',
+                  sub: 'inteligencia artificial',
                   color: 'turquesa',
                 },
                 {
-                  number: '65%',
-                  label: 'de los empleos actuales',
-                  sub: 'se verán transformados por la IA',
+                  number: '29,8%',
+                  label: 'de la población de 16 a 74 años',
+                  sub: 'tiene habilidades digitales bajas o inferiores',
+                  color: 'turquesa',
+                },
+                {
+                  number: '2M',
+                  label: 'de empleos en España podrían verse',
+                  sub: 'automatizados en la próxima década',
                   color: 'violeta',
                 },
               ].map((stat, i) => (

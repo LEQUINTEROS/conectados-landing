@@ -44,12 +44,12 @@ export default function Impacto() {
   const [ref, visible] = useReveal()
 
   return (
-    <section id="impacto" className="relative py-24 md:py-32 bg-white overflow-hidden">
+    <section id="impacto" className="relative pt-8 pb-16 md:pt-10 md:pb-20 bg-white overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-violeta-200 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className={`reveal ${visible ? 'visible' : ''}`}>
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10">
             <div className="flex items-center gap-3 justify-center mb-6">
               <div className="w-12 h-[2px] bg-turquesa-400" />
               <span className="text-turquesa-500 font-semibold text-sm uppercase tracking-widest">Impacto</span>
@@ -60,9 +60,8 @@ export default function Impacto() {
               <span className="gradient-text"> queremos construir</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Estamos en una etapa temprana, pero con una visión clara de lo que viene.
-              No inventamos cifras: construimos realidades. Aquí está el futuro que estamos
-              empezando a hacer posible.
+              Estamos empezando, pero con una dirección clara: construir un futuro donde la
+              inteligencia artificial genere oportunidades reales para todas las personas.
             </p>
           </div>
 
@@ -77,7 +76,7 @@ export default function Impacto() {
           {/* Vision cards */}
           <div className={`stagger-children grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto ${visible ? 'visible' : ''}`}>
             {visions.map((v, i) => (
-              <div key={i} className="card-hover flex gap-5 p-6 rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-violeta-50/30">
+              <div key={i} className="card-hover relative flex gap-5 p-6 rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-violeta-50/30">
                 <div className="shrink-0 w-14 h-14 rounded-2xl bg-violeta-50 flex items-center justify-center text-violeta-400">
                   {v.icon}
                 </div>

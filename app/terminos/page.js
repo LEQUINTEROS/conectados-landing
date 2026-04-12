@@ -8,19 +8,22 @@ export default function Terminos() {
   return (
     <div className="min-h-screen bg-white">
       <nav className="bg-white border-b border-gray-100 px-4 sm:px-6 lg:px-8 py-4">
-        <div className="max-w-4xl mx-auto flex items-center gap-3">
+        <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
           <a href="/" className="flex items-center gap-3">
             <Image src="/logo-square.png" alt="CONECTADOS" width={32} height={32} />
             <span className="font-display font-bold text-violeta-400">CONECTADOS</span>
+          </a>
+          <a href="/" className="text-sm text-violeta-400 hover:text-turquesa-500 font-semibold">
+            ← Volver al inicio
           </a>
         </div>
       </nav>
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 legal-content">
         <h1 className="text-4xl font-display font-extrabold text-violeta-700 mb-8">Términos y Condiciones de Uso</h1>
-        <p className="text-sm text-gray-400 mb-8">Última actualización: [PLACEHOLDER: FECHA]</p>
+        <p className="text-sm text-gray-400 mb-8">Última actualización: 12 de abril de 2026</p>
 
         <h2>1. Objeto</h2>
-        <p>Las presentes condiciones regulan el uso del sitio web www.conectados.org, titularidad de CONECTADOS, asociación sin fines de lucro con CIF [PLACEHOLDER: G-XXXXXXXX]. El acceso al sitio web implica la aceptación de estas condiciones.</p>
+        <p>Las presentes condiciones regulan el uso del sitio web www.conectados.org, titularidad de CONECTADOS, asociación sin fines de lucro con CIF G-75578229. El acceso al sitio web implica la aceptación de estas condiciones.</p>
 
         <h2>2. Acceso y uso del sitio web</h2>
         <p>El acceso al sitio web es gratuito y no requiere registro previo, salvo para determinadas funcionalidades como formularios de contacto o inscripción en actividades.</p>
@@ -59,7 +62,7 @@ export default function Terminos() {
         <p>CONECTADOS se reserva el derecho de modificar estas condiciones en cualquier momento. Las modificaciones entrarán en vigor desde su publicación en el sitio web.</p>
 
         <h2>8. Legislación aplicable y jurisdicción</h2>
-        <p>Estas condiciones se rigen por la legislación española. Para cualquier controversia, las partes se someten a los Juzgados y Tribunales de [PLACEHOLDER: Ciudad].</p>
+        <p>Estas condiciones se rigen por la legislación española. Para cualquier controversia, las partes se someten a los Juzgados y Tribunales de Palma de Mallorca.</p>
       </main>
     </div>
   )

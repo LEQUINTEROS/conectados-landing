@@ -8,24 +8,27 @@ export default function Privacidad() {
   return (
     <div className="min-h-screen bg-white">
       <nav className="bg-white border-b border-gray-100 px-4 sm:px-6 lg:px-8 py-4">
-        <div className="max-w-4xl mx-auto flex items-center gap-3">
+        <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
           <a href="/" className="flex items-center gap-3">
             <Image src="/logo-square.png" alt="CONECTADOS" width={32} height={32} />
             <span className="font-display font-bold text-violeta-400">CONECTADOS</span>
+          </a>
+          <a href="/" className="text-sm text-violeta-400 hover:text-turquesa-500 font-semibold">
+            ← Volver al inicio
           </a>
         </div>
       </nav>
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 legal-content">
         <h1 className="text-4xl font-display font-extrabold text-violeta-700 mb-8">Política de Privacidad</h1>
-        <p className="text-sm text-gray-400 mb-8">Última actualización: [PLACEHOLDER: FECHA]</p>
+        <p className="text-sm text-gray-400 mb-8">Última actualización: 12 de abril de 2026</p>
 
         <h2>1. Responsable del tratamiento</h2>
         <ul>
           <li><strong>Identidad:</strong> CONECTADOS — Asociación sin fines de lucro</li>
-          <li><strong>CIF:</strong> [PLACEHOLDER: G-XXXXXXXX]</li>
-          <li><strong>Dirección:</strong> [PLACEHOLDER: Dirección completa]</li>
-          <li><strong>Correo electrónico:</strong> [PLACEHOLDER: privacidad@conectados.org]</li>
-          <li><strong>Delegado de Protección de Datos (DPD):</strong> [PLACEHOLDER: Nombre o indicar si no es obligatorio]</li>
+          <li><strong>CIF:</strong> G-75578229</li>
+          <li><strong>Dirección:</strong> Calle Margarita Retuerto 2, Palma de Mallorca, Islas Baleares</li>
+          <li><strong>Correo electrónico:</strong> contacto@asociacionconectados.org</li>
+          <li><strong>Delegado de Protección de Datos (DPD):</strong> Nicolás Eloy Beltrán Moyano (inscrito en la AEPD)</li>
         </ul>
 
         <h2>2. Finalidades del tratamiento</h2>
@@ -55,8 +58,8 @@ export default function Privacidad() {
         <h2>5. Destinatarios de los datos</h2>
         <p>Tus datos no serán cedidos a terceros salvo obligación legal. Los datos pueden ser tratados por:</p>
         <ul>
-          <li><strong>Proveedor de hosting:</strong> [PLACEHOLDER: Nombre del proveedor, p.ej. Vercel Inc.], con servidores en [PLACEHOLDER: ubicación]. Las transferencias internacionales se amparan en [PLACEHOLDER: Cláusulas Contractuales Tipo / Marco de Privacidad de Datos UE-EE.UU.].</li>
-          <li><strong>Proveedor de correo electrónico:</strong> [PLACEHOLDER: Nombre del servicio].</li>
+          <li><strong>Proveedor de hosting:</strong> Vercel Inc., con servidores en la Unión Europea y Estados Unidos. Las transferencias internacionales se amparan en las Cláusulas Contractuales Tipo y en el Marco de Privacidad de Datos UE-EE.UU.</li>
+          <li><strong>Proveedor de correo electrónico:</strong> Resend (envío transaccional desde contacto@asociacionconectados.org).</li>
         </ul>
 
         <h2>6. Plazo de conservación</h2>
@@ -72,7 +75,7 @@ export default function Privacidad() {
           <li><strong>Portabilidad:</strong> recibir tus datos en un formato estructurado.</li>
           <li><strong>Oposición:</strong> oponerte al tratamiento de tus datos.</li>
         </ul>
-        <p>Para ejercer estos derechos, envía un correo a <strong>[PLACEHOLDER: privacidad@conectados.org]</strong> indicando tu nombre, el derecho que deseas ejercer y una copia de tu documento identificativo.</p>
+        <p>Para ejercer estos derechos, envía un correo a <strong>contacto@asociacionconectados.org</strong> indicando tu nombre, el derecho que deseas ejercer y una copia de tu documento identificativo.</p>
         <p>También tienes derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD): <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a>.</p>
 
         <h2>8. Seguridad</h2>

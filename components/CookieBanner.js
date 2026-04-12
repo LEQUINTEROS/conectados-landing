@@ -25,15 +25,7 @@ export default function CookieBanner() {
 
   const configure = () => setShowConfig(!showConfig)
 
-  if (!visible) return (
-    <button
-      onClick={() => setVisible(true)}
-      className="fixed bottom-4 left-4 z-40 bg-white shadow-lg rounded-full px-4 py-2 text-xs font-medium text-violeta-400 hover:bg-violeta-50 transition-colors border border-violeta-100"
-      aria-label="Gestionar cookies"
-    >
-      🍪 Cookies
-    </button>
-  )
+  if (!visible) return null
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-fade-in-up">

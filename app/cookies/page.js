@@ -8,16 +8,19 @@ export default function Cookies() {
   return (
     <div className="min-h-screen bg-white">
       <nav className="bg-white border-b border-gray-100 px-4 sm:px-6 lg:px-8 py-4">
-        <div className="max-w-4xl mx-auto flex items-center gap-3">
+        <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
           <a href="/" className="flex items-center gap-3">
             <Image src="/logo-square.png" alt="CONECTADOS" width={32} height={32} />
             <span className="font-display font-bold text-violeta-400">CONECTADOS</span>
+          </a>
+          <a href="/" className="text-sm text-violeta-400 hover:text-turquesa-500 font-semibold">
+            ← Volver al inicio
           </a>
         </div>
       </nav>
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 legal-content">
         <h1 className="text-4xl font-display font-extrabold text-violeta-700 mb-8">Política de Cookies</h1>
-        <p className="text-sm text-gray-400 mb-8">Última actualización: [PLACEHOLDER: FECHA]</p>
+        <p className="text-sm text-gray-400 mb-8">Última actualización: 12 de abril de 2026</p>
 
         <h2>1. ¿Qué son las cookies?</h2>
         <p>Las cookies son pequeños archivos de texto que los sitios web almacenan en tu dispositivo (ordenador, teléfono móvil o tablet) cuando los visitas. Sirven para que el sitio web recuerde información sobre tu visita, como tus preferencias, y facilitan la navegación.</p>
@@ -59,7 +62,7 @@ export default function Cookies() {
         <p>[PLACEHOLDER: Si se usan servicios como Google Analytics, indicar que los datos pueden transferirse a EE.UU. al amparo del Marco de Privacidad de Datos UE-EE.UU. (decisión de adecuación de la Comisión Europea de julio de 2023).]</p>
 
         <h2>6. Más información</h2>
-        <p>Para cualquier consulta sobre nuestra política de cookies, puedes contactarnos en <strong>[PLACEHOLDER: privacidad@conectados.org]</strong>.</p>
+        <p>Para cualquier consulta sobre nuestra política de cookies, puedes contactarnos en <strong>contacto@asociacionconectados.org</strong>.</p>
         <p>También puedes obtener más información sobre las cookies en: <a href="https://www.aepd.es/guias/guia-uso-de-las-cookies.pdf" target="_blank" rel="noopener noreferrer">Guía de la AEPD sobre el uso de cookies</a>.</p>
       </main>
     </div>

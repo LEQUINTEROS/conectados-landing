@@ -8,26 +8,29 @@ export default function AvisoLegal() {
   return (
     <div className="min-h-screen bg-white">
       <nav className="bg-white border-b border-gray-100 px-4 sm:px-6 lg:px-8 py-4">
-        <div className="max-w-4xl mx-auto flex items-center gap-3">
+        <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
           <a href="/" className="flex items-center gap-3">
             <Image src="/logo-square.png" alt="CONECTADOS" width={32} height={32} />
             <span className="font-display font-bold text-violeta-400">CONECTADOS</span>
+          </a>
+          <a href="/" className="text-sm text-violeta-400 hover:text-turquesa-500 font-semibold">
+            ← Volver al inicio
           </a>
         </div>
       </nav>
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 legal-content">
         <h1 className="text-4xl font-display font-extrabold text-violeta-700 mb-8">Aviso Legal</h1>
-        <p className="text-sm text-gray-400 mb-8">Última actualización: [PLACEHOLDER: FECHA]</p>
+        <p className="text-sm text-gray-400 mb-8">Última actualización: 12 de abril de 2026</p>
 
         <h2>1. Datos identificativos</h2>
         <p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de los siguientes datos:</p>
         <ul>
           <li><strong>Denominación social:</strong> CONECTADOS — Asociación sin fines de lucro</li>
-          <li><strong>CIF:</strong> [PLACEHOLDER: G-XXXXXXXX]</li>
-          <li><strong>Domicilio social:</strong> [PLACEHOLDER: Dirección completa, CP, Ciudad, Provincia]</li>
-          <li><strong>Correo electrónico:</strong> [PLACEHOLDER: hola@conectados.org]</li>
-          <li><strong>Teléfono:</strong> [PLACEHOLDER: +34 XXX XXX XXX]</li>
-          <li><strong>Inscripción registral:</strong> Inscrita en el [PLACEHOLDER: Registro Nacional / Autonómico de Asociaciones], con el número [PLACEHOLDER: XXXXX], Sección [PLACEHOLDER], Grupo [PLACEHOLDER].</li>
+          <li><strong>CIF:</strong> G-75578229</li>
+          <li><strong>Domicilio social:</strong> Calle Margarita Retuerto 2, Palma de Mallorca, Islas Baleares</li>
+          <li><strong>Correo electrónico:</strong> contacto@asociacionconectados.org</li>
+          <li><strong>Teléfono:</strong> +34 871 71 75 35</li>
+          <li><strong>Inscripción registral:</strong> Inscrita en el Registro Nacional de Asociaciones, con número nacional 630180, Sección 1ª.</li>
         </ul>
 
         <h2>2. Objeto</h2>
@@ -45,7 +48,7 @@ export default function AvisoLegal() {
         <p>El Sitio Web puede contener enlaces a páginas de terceros. CONECTADOS no asume responsabilidad alguna por el contenido, información o servicios que pudieran aparecer en dichos sitios.</p>
 
         <h2>6. Legislación aplicable y jurisdicción</h2>
-        <p>Las presentes condiciones se rigen por la legislación española. Para la resolución de cualquier controversia que pudiera surgir, las partes se someten a los Juzgados y Tribunales de [PLACEHOLDER: Ciudad].</p>
+        <p>Las presentes condiciones se rigen por la legislación española. Para la resolución de cualquier controversia que pudiera surgir, las partes se someten a los Juzgados y Tribunales de Palma de Mallorca.</p>
       </main>
     </div>
   )

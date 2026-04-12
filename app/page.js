@@ -10,6 +10,7 @@ import Credibilidad from '../components/Credibilidad'
 import Ideas from '../components/Ideas'
 import Footer from '../components/Footer'
 import CookieBanner from '../components/CookieBanner'
+import MadeWithAI from '../components/MadeWithAI'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Ideas />
       </main>
       <Footer />
+      <MadeWithAI />
       <CookieBanner />
     </>
   )

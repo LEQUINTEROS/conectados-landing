@@ -5,25 +5,25 @@ const audiences = [
   {
     emoji: '🌱',
     title: 'Personas en situación de vulnerabilidad',
-    description: 'Quienes enfrentan barreras económicas, sociales o geográficas para acceder a la tecnología. La IA puede ser su herramienta de autonomía.',
+    description: 'Personas que enfrentan barreras económicas, sociales o territoriales para acceder a la tecnología. Trabajamos para que la inteligencia artificial sea una herramienta de autonomía, no un factor más de exclusión.',
     color: 'bg-violeta-400',
   },
   {
     emoji: '🚀',
     title: 'Jóvenes que buscan nuevas oportunidades',
-    description: 'Jóvenes sin acceso a formación tecnológica de calidad que necesitan herramientas concretas para su empleabilidad y su futuro profesional.',
+    description: 'Jóvenes con talento y ganas de crecer, pero sin acceso a formación tecnológica de calidad. Les acercamos herramientas reales para mejorar su empleabilidad y construir su futuro.',
     color: 'bg-turquesa-400',
   },
   {
     emoji: '🏘️',
     title: 'Entidades y comunidades',
-    description: 'Organizaciones sociales, colectivos y comunidades que quieren integrar la inteligencia artificial en su trabajo y adaptarse al cambio tecnológico.',
+    description: 'Organizaciones sociales, colectivos y comunidades que quieren integrar la inteligencia artificial en su trabajo y adaptarse a un mundo en transformación, sin dejar a nadie atrás.',
     color: 'bg-violeta-300',
   },
   {
     emoji: '🤝',
     title: 'Personas y organizaciones que quieren colaborar',
-    description: 'Voluntarios/as, profesionales, empresas y entidades que creen en la inclusión digital y quieren aportar su tiempo, conocimiento o recursos.',
+    description: 'Personas, profesionales, empresas y entidades que creen en una tecnología más justa y quieren ser parte de una comunidad organizada que impulsa inclusión, conocimiento y oportunidades.',
     color: 'bg-turquesa-500',
   },
 ]
@@ -32,7 +32,7 @@ export default function AQuienNosDirigimos() {
   const [ref, visible] = useReveal()
 
   return (
-    <section className="relative py-24 md:py-32 bg-white overflow-hidden">
+    <section className="relative pt-8 pb-16 md:pt-10 md:pb-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div ref={ref} className={`reveal ${visible ? 'visible' : ''}`}>
           <div className="flex items-center gap-3 mb-6">
@@ -46,8 +46,8 @@ export default function AQuienNosDirigimos() {
           </h2>
 
           <p className="text-lg text-gray-600 max-w-2xl mb-16">
-            Trabajamos con y para quienes más necesitan que la tecnología sea un puente y no
-            una barrera. Y también con quienes quieren construir ese puente.
+            Construimos puentes entre quienes hoy quedan fuera de la revolución tecnológica
+            y quienes pueden ayudar a transformarla en una oportunidad para todos.
           </p>
 
           <div className={`stagger-children grid sm:grid-cols-2 lg:grid-cols-4 gap-6 ${visible ? 'visible' : ''}`}>

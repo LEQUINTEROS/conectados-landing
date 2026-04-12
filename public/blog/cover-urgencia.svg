@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none">
+  <defs>
+    <linearGradient id="bg-urg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#180924"/>
+      <stop offset="0.55" stop-color="#7A2EB5"/>
+      <stop offset="1" stop-color="#311248"/>
+    </linearGradient>
+    <radialGradient id="glow-urg" cx="0.8" cy="0.2" r="0.7">
+      <stop offset="0" stop-color="#55BED9" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#55BED9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2-urg" cx="0.15" cy="0.9" r="0.6">
+      <stop offset="0" stop-color="#F4E10D" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#F4E10D" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots-urg" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg-urg)"/>
+  <rect width="1200" height="300" fill="url(#dots-urg)"/>
+  <rect width="1200" height="300" fill="url(#glow-urg)"/>
+  <rect width="1200" height="300" fill="url(#glow2-urg)"/>
+</svg>
