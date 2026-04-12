@@ -37,16 +37,9 @@ const partners = [
     name: 'Fundación "la Caixa"',
     description: 'Vinculados al ecosistema de innovación social de Fundación "la Caixa".',
     logo: (
-      <div className="flex flex-col items-center gap-0.5" style={{ color: GREY }}>
-        <svg viewBox="0 0 60 60" className="h-7 w-auto" fill="currentColor">
-          <path d="M32 6 C22 10 15 20 12 32 C24 30 36 24 44 12 C40 10 36 8 32 6 Z M10 38 L18 32 L22 38 L18 44 Z" />
-          <circle cx="14" cy="30" r="2.5" />
-          <circle cx="16" cy="42" r="3" />
-        </svg>
-        <span className="text-[10px] font-semibold leading-none whitespace-nowrap border-t border-current pt-0.5">
-          Fundación &ldquo;la Caixa&rdquo;
-        </span>
-      </div>
+      <span className="text-base font-serif font-semibold leading-none whitespace-nowrap border-b border-current pb-1" style={{ color: GREY }}>
+        Fundación &rdquo;la Caixa&rdquo;
+      </span>
     ),
   },
   {

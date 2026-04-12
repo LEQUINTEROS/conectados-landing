@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="h-1 bg-gradient-to-r from-violeta-400 via-turquesa-400 to-violeta-400" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
@@ -42,6 +42,21 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+
+            {/* Contact inside brand column */}
+            <ul className="mt-8 space-y-3 text-sm text-white/60">
+              <li>
+                <a href="mailto:contacto@asociacionconectados.org" className="hover:text-turquesa-300 transition-colors break-all">
+                  contacto@asociacionconectados.org
+                </a>
+              </li>
+              <li>Calle Margarita Retuerto 2<br />Palma de Mallorca, Islas Baleares</li>
+              <li>
+                <a href="tel:+34871717535" className="hover:text-turquesa-300 transition-colors">
+                  871 71 75 35
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Navigation */}
@@ -62,24 +77,6 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-display font-bold text-sm uppercase tracking-wider text-turquesa-300 mb-5">Contacto</h4>
-            <ul className="space-y-3 text-sm text-white/60">
-              <li>
-                <a href="mailto:contacto@asociacionconectados.org" className="hover:text-turquesa-300 transition-colors">
-                  contacto@asociacionconectados.org
-                </a>
-              </li>
-              <li>Calle Margarita Retuerto 2<br />Palma de Mallorca, Islas Baleares</li>
-              <li>
-                <a href="tel:+34871717535" className="hover:text-turquesa-300 transition-colors">
-                  871 71 75 35
-                </a>
-              </li>
             </ul>
           </div>
 
