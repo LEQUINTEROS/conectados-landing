@@ -102,12 +102,12 @@ function ChatBot() {
       <div className="absolute -bottom-2 -right-4 w-2 h-2 rounded-full bg-violeta-300/50 animate-pulse" style={{ animationDelay: '1s' }} />
       <div className="absolute top-1/2 -right-5 w-2 h-2 rounded-full bg-turquesa-400/30 animate-float" style={{ animationDelay: '0.5s' }} />
 
-      <div className="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl shadow-violeta-900/40 flex flex-col h-full"
-        style={{ background: 'linear-gradient(160deg, rgba(122,46,181,0.25) 0%, rgba(15,10,26,0.6) 50%, rgba(85,190,217,0.15) 100%)' }}>
+      <div className="relative rounded-3xl overflow-hidden border border-white/20 shadow-2xl shadow-violeta-900/40 flex flex-col h-full backdrop-blur-md"
+        style={{ background: 'linear-gradient(160deg, rgba(255,255,255,0.18) 0%, rgba(122,46,181,0.35) 50%, rgba(85,190,217,0.25) 100%)' }}>
 
         {/* Header — compact */}
         <div className="px-4 py-2.5 flex items-center gap-2.5 border-b border-white/10"
-          style={{ background: 'linear-gradient(135deg, rgba(122,46,181,0.4) 0%, rgba(85,190,217,0.2) 100%)' }}>
+          style={{ background: 'linear-gradient(135deg, rgba(122,46,181,0.55) 0%, rgba(85,190,217,0.35) 100%)' }}>
           <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-turquesa-400 to-violeta-400 flex items-center justify-center shadow-md shadow-turquesa-400/20">
             <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z" />
@@ -228,7 +228,7 @@ function Typewriter({ lines, onComplete }) {
   }, [currentLine, currentChar, lines, onComplete])
 
   return (
-    <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-display font-extrabold text-white leading-[1.15] mb-6">
+    <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-display font-extrabold text-white leading-[1.1] mt-8 mb-6">
       {lines.map((line, lineIdx) => {
         let text = ''
         if (lineIdx < currentLine) {
@@ -258,8 +258,8 @@ export default function Hero() {
   const [typingDone, setTypingDone] = useState(false)
 
   const heroLines = [
-    { text: 'La inteligencia artificial', className: 'text-white' },
-    { text: 'al servicio de la inclusión social', className: 'text-turquesa-300' },
+    { text: 'La Inteligencia Artificial', className: 'text-white' },
+    { text: 'al servicio de la Inclusión Social', className: 'text-turquesa-300' },
   ]
 
   return (
@@ -286,7 +286,7 @@ export default function Hero() {
 
             <p className={`text-lg sm:text-xl text-white/75 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed transition-all duration-700 ${typingDone ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}>
-              Impulsamos comunidades de aprendizaje en inteligencia artificial para que
+              Impulsamos comunidades de aprendizaje en Inteligencia Artificial para que
               personas en situación de vulnerabilidad accedan a nuevas oportunidades,
               mejoren su empleabilidad y construyan un futuro más justo.
             </p>

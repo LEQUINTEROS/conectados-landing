@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none">
+  <defs>
+    <linearGradient id="bg-t" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55BED9"/>
+      <stop offset="0.55" stop-color="#7A2EB5"/>
+      <stop offset="1" stop-color="#311248"/>
+    </linearGradient>
+    <radialGradient id="glow-t" cx="0.2" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#F4E10D" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#F4E10D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-t2" cx="0.9" cy="0.9" r="0.6">
+      <stop offset="0" stop-color="#55BED9" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#55BED9" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots-t" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg-t)"/>
+  <rect width="1200" height="300" fill="url(#dots-t)"/>
+  <rect width="1200" height="300" fill="url(#glow-t)"/>
+  <rect width="1200" height="300" fill="url(#glow-t2)"/>
+</svg>
