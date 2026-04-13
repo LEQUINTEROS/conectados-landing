@@ -228,7 +228,7 @@ function Typewriter({ lines, onComplete }) {
   }, [currentLine, currentChar, lines, onComplete])
 
   return (
-    <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-display font-extrabold text-white leading-[1.1] mt-8 mb-6">
+    <h1 className="text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-display font-extrabold text-white leading-[1.1] mt-8 mb-6">
       {lines.map((line, lineIdx) => {
         let text = ''
         if (lineIdx < currentLine) {
